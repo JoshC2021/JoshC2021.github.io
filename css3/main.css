@@ -1,0 +1,69 @@
+body {
+    background-image: url('../images/blueBackground.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+  }
+  
+  p,h2{
+      color: yellow;
+      font-weight:bold;
+      font-family: serif;
+      font-size:18px;
+  }
+  
+  .centerText
+  {
+      text-align: center;
+  }
+  
+  
+  /* Add a black background color to the top navigation */
+  header {
+      background-color: grey;
+      overflow: hidden;
+    }
+    
+    /* Style the links inside the navigation bar */
+    header a {
+      float: left;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+    
+    /* Change the color of links on hover */
+    header a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+    
+    /* Add a color to the active/current link */
+    header a.active {
+      background-color: darkslategray;
+      color: white;
+    }
+
+    .content {
+      padding: 16px;
+    }
+    
+
+    .sticky 
+    {
+      position: fixed;
+      top: 0;
+      width: 100%;
+    }
+    
+    .sticky + .content 
+    {
+      padding-top: 60px;
+    }
+    #googleMap
+    {
+      width:100%;
+      height:400px;
+    }
