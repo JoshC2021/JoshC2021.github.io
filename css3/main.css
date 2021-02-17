@@ -20,7 +20,7 @@ body {
   
   /* Add a black background color to the top navigation */
   header {
-      background-color: grey;
+      background-color: blue;
       overflow: hidden;
     }
     
@@ -42,7 +42,7 @@ body {
     
     /* Add a color to the active/current link */
     header a.active {
-      background-color: darkslategray;
+      background-color: lightslategrey;
       color: white;
     }
 
@@ -50,6 +50,17 @@ body {
       padding: 16px;
     }
     
+    a:link {
+      color: lightgoldenrodyellow;
+      background-color: transparent;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: orange;
+      background-color: transparent;
+      text-decoration: none;
+    }
 
     .sticky 
     {
@@ -64,6 +75,6 @@ body {
     }
     #googleMap
     {
-      width:100%;
+      width:80%;
       height:400px;
     }

@@ -23,6 +23,15 @@
 <head>
     <title>Portfolio Home</title>
     <link href="css3/main.css" rel = "stylesheet">
+
+    <!--Load the API from the specified URL
+    * The async attribute allows the browser to render the page while the API loads
+    * The key parameter will contain your own API key (which is not needed for this tutorial)
+    * The callback parameter executes the initMap() function
+    -->
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCFzFeVFp6i7ITQhir32u2yhaxPBo8hryk&callback=initMap">
+    </script>
 </head>
 
 <body>
@@ -32,109 +41,32 @@
         <a href="about.html">About</a>
     </header>
     <script src="js/myportfolio.js"></script> 
-   <!-- <script>
-        function myMap() {
-  var mapProp= {
-    center:new google.maps.LatLng(51.508742,-0.120850),
-    zoom:5,
-  };
-  var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-  }
-    </script>
--->
-
-<!--Load the API from the specified URL
-    * The async attribute allows the browser to render the page while the API loads
-    * The key parameter will contain your own API key (which is not needed for this tutorial)
-    * The callback parameter executes the initMap() function
-    -->
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCFzFeVFp6i7ITQhir32u2yhaxPBo8hryk&callback=initMap">
-    </script>
     <div class="content">
         <h2>Blogging</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-        labore et dolore magna aliqua. Leo vel orci porta non. Mi quis hendrerit dolor magna eget est.
-        Erat nam at lectus urna. Risus pretium quam vulputate dignissim suspendisse. Laoreet id donec 
-        ultrices tincidunt arcu. Amet consectetur adipiscing elit duis tristique sollicitudin nibh sit. 
-        Aliquet nibh praesent tristique magna sit amet purus gravida quis. Dolor sit amet consectetur 
-        dipiscing elit duis. Consequat mauris nunc congue nisi vitae suscipit tellus mauris a. Augue 
-        eget arcu dictum varius duis at consectetur lorem. Sed augue lacus viverra vitae congue. 
-        Fermentum dui faucibus in ornare quam viverra. Varius sit amet mattis vulputate enim nulla 
-        aliquet porttitor. Eu facilisis sed odio morbi. Mattis molestie a iaculis at erat pellentesque 
-        adipiscing commodo. Etiam dignissim diam quis enim lobortis scelerisque fermentum. Blandit 
-        aliquam etiam erat velit scelerisque in dictum non. Vulputate odio ut enim blandit volutpat 
-        maecenas volutpat blandit. Amet aliquam id diam maecenas ultricies. At lectus urna duis 
-        convallis convallis tellus id interdum. Pellentesque elit ullamcorper dignissim cras tincidunt
-        lobortis feugiat. Vulputate odio ut enim blandit volutpat maecenas volutpat blandit aliquam. 
-        Viverra adipiscing at in tellus integer. Ut tellus elementum sagittis vitae et leo duis. 
-        Pellentesque eu tincidunt tortor aliquam nulla facilisi cras fermentum odio. Lorem ipsum dolor 
-        sit amet consectetur adipiscing elit ut. Interdum consectetur libero id faucibus nisl tincidunt 
-        eget nullam non. Nisi porta lorem mollis aliquam ut porttitor. Volutpat odio facilisis mauris 
-        sit amet massa vitae. Sed augue lacus viverra vitae congue eu consequat. Praesent semper 
-        feugiat nibh sed pulvinar. Sit amet aliquam id diam. Vestibulum mattis ullamcorper velit 
-        sed ullamcorper morbi. Volutpat blandit aliquam etiam erat velit scelerisque in. Metus 
-        dictum at tempor commodo ullamcorper a. Magna eget est lorem ipsum dolor sit. Quam elementum 
-        pulvinar etiam non quam lacus suspendisse. Pharetra convallis posuere morbi leo urna molestie 
-        at elementum. Purus in massa tempor nec feugiat nisl pretium fusce.
-        labore et dolore magna aliqua. Leo vel orci porta non. Mi quis hendrerit dolor magna eget est.
-        Erat nam at lectus urna. Risus pretium quam vulputate dignissim suspendisse. Laoreet id donec 
-        ultrices tincidunt arcu. Amet consectetur adipiscing elit duis tristique sollicitudin nibh sit. 
-        Aliquet nibh praesent tristique magna sit amet purus gravida quis. Dolor sit amet consectetur 
-        dipiscing elit duis. Consequat mauris nunc congue nisi vitae suscipit tellus mauris a. Augue 
-        eget arcu dictum varius duis at consectetur lorem. Sed augue lacus viverra vitae congue. 
-        Fermentum dui faucibus in ornare quam viverra. Varius sit amet mattis vulputate enim nulla 
-        aliquet porttitor. Eu facilisis sed odio morbi. Mattis molestie a iaculis at erat pellentesque 
-        adipiscing commodo. Etiam dignissim diam quis enim lobortis scelerisque fermentum. Blandit 
-        aliquam etiam erat velit scelerisque in dictum non. Vulputate odio ut enim blandit volutpat 
-        maecenas volutpat blandit. Amet aliquam id diam maecenas ultricies. At lectus urna duis 
-        convallis convallis tellus id interdum. Pellentesque elit ullamcorper dignissim cras tincidunt
-        lobortis feugiat. Vulputate odio ut enim blandit volutpat maecenas volutpat blandit aliquam. 
-        Viverra adipiscing at in tellus integer. Ut tellus elementum sagittis vitae et leo duis. 
-        Pellentesque eu tincidunt tortor aliquam nulla facilisi cras fermentum odio. Lorem ipsum dolor 
-        sit amet consectetur adipiscing elit ut. Interdum consectetur libero id faucibus nisl tincidunt 
-        eget nullam non. Nisi porta lorem mollis aliquam ut porttitor. Volutpat odio facilisis mauris 
-        sit amet massa vitae. Sed augue lacus viverra vitae congue eu consequat. Praesent semper 
-        feugiat nibh sed pulvinar. Sit amet aliquam id diam. Vestibulum mattis ullamcorper velit 
-        sed ullamcorper morbi. Volutpat blandit aliquam etiam erat velit scelerisque in. Metus 
-        dictum at tempor commodo ullamcorper a. Magna eget est lorem ipsum dolor sit. Quam elementum 
-        pulvinar etiam non quam lacus suspendisse. Pharetra convallis posuere morbi leo urna molestie 
-        at elementum. Purus in massa tempor nec feugiat nisl pretium fusce.
-        labore et dolore magna aliqua. Leo vel orci porta non. Mi quis hendrerit dolor magna eget est.
-        Erat nam at lectus urna. Risus pretium quam vulputate dignissim suspendisse. Laoreet id donec 
-        ultrices tincidunt arcu. Amet consectetur adipiscing elit duis tristique sollicitudin nibh sit. 
-        Aliquet nibh praesent tristique magna sit amet purus gravida quis. Dolor sit amet consectetur 
-        dipiscing elit duis. Consequat mauris nunc congue nisi vitae suscipit tellus mauris a. Augue 
-        eget arcu dictum varius duis at consectetur lorem. Sed augue lacus viverra vitae congue. 
-        Fermentum dui faucibus in ornare quam viverra. Varius sit amet mattis vulputate enim nulla 
-        aliquet porttitor. Eu facilisis sed odio morbi. Mattis molestie a iaculis at erat pellentesque 
-        adipiscing commodo. Etiam dignissim diam quis enim lobortis scelerisque fermentum. Blandit 
-        aliquam etiam erat velit scelerisque in dictum non. Vulputate odio ut enim blandit volutpat 
-        maecenas volutpat blandit. Amet aliquam id diam maecenas ultricies. At lectus urna duis 
-        convallis convallis tellus id interdum. Pellentesque elit ullamcorper dignissim cras tincidunt
-        lobortis feugiat. Vulputate odio ut enim blandit volutpat maecenas volutpat blandit aliquam. 
-        Viverra adipiscing at in tellus integer. Ut tellus elementum sagittis vitae et leo duis. 
-        Pellentesque eu tincidunt tortor aliquam nulla facilisi cras fermentum odio. Lorem ipsum dolor 
-        sit amet consectetur adipiscing elit ut. Interdum consectetur libero id faucibus nisl tincidunt 
-        eget nullam non. Nisi porta lorem mollis aliquam ut porttitor. Volutpat odio facilisis mauris 
-        sit amet massa vitae. Sed augue lacus viverra vitae congue eu consequat. Praesent semper 
-        feugiat nibh sed pulvinar. Sit amet aliquam id diam. Vestibulum mattis ullamcorper velit 
-        sed ullamcorper morbi. Volutpat blandit aliquam etiam erat velit scelerisque in. Metus 
-        dictum at tempor commodo ullamcorper a. Magna eget est lorem ipsum dolor sit. Quam elementum 
-        pulvinar etiam non quam lacus suspendisse. Pharetra convallis posuere morbi leo urna molestie 
-        at elementum. Purus in massa tempor nec feugiat nisl pretium fusce.
-        </p>
+        <p>The key to having a succesful day means developing a routine. People are habitual and are prone 
+        to develop habits. By instilling positive habits into a dialy routine, it becomes easier for you to
+        continue those good practives and avoid negative habits. Also a routine helps you plan ahead and breakdown your
+        day as you know in advance what you need to do. So start planning now to continue generating success.</p>
         <h2>Developing</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-        Euismod lacinia at quis risus sed vulputate. Justo donec enim diam vulputate.</p>
+        <p>Becoming a developer takes a lot of practice. I began in high school taking a course in Java. After
+        getting a taste for it, I engednered a great interest in programming and took a lot of courses in college.
+        The material covered a wide range of courses from web development to AI. Following my graduation, I would
+        spend time doing Freelancing to bolster my portfolio. This leads me to today where I am enrolled at 
+        the Grand Circus to learn about c# and developing code in a professional manner.</p>
         <h2>Hometown</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-        Euismod lacinia at quis risus sed vulputate. Justo donec enim diam vulputate.</p>
-        <img src ="handshake.jpg" alt ="Trustworthy" width ="250px" height ="auto" />
+        <p>I was raised in the city of Novi,Michigan. Its name rumored to come from No. VI(Roman Numeral 6) due 
+        to Novi being the 6th Toll Gate. The city is home to Twelve Oaks Mall which has a load of stores to go to.
+        Ease of travel due to the abundance of major freeways including M-5,I-275,I-696, and I-96 means menas your
+        free to come anytime.</p>
+        <img src ="images/welcome.jpg" alt ="Welcome" width ="250px" height ="auto" />
     </div>
     <div id="googleMap"></div>
+
+    <footer>
+        <p>Author:Joshua Carolin</p>
+        <p><a href="https://www.linkedin.com/in/joshuacarolin/">LinkedIn</a></p>
+        <p><a href="https://joshc2021.github.io/">Blog </a></p>
+    </footer>
     
 </body>
 
